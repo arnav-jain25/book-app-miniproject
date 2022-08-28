@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookkeeper | Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="dashboard.js"></script>
+
+</head>
+
+<header>
+    <h1>Welcome to Bookkeeperrr..!!</h1>
+    <div class="divider"><span></span><span>A Book Management Application</span><span></span></div>
+</header>
+
+<body>
+    <div class="container" id="bodyContainer">
+        <nav>
+            <ul>
+                <li>
+                    <a href="dashboard.html">| Home |</a>
+                </li>
+                <li>
+                    <a href="mybooks.html">| My Favourites |</a>
+                 </li>
+                <li>
+                    <a href="https://openlibrary.org/trending/monthly">| Recommendations |</a>
+                </li>
+                <li>
+                    <a href="https://openlibrary.org/subjects/authors_and_publishers#:~:text=James%20Joyce%20%281882-1941%29%2C%20Charles%20Dickens%20%281812-1870%29%2C%20Ernest%20Hemingway,James%20%281843-1916%29%2C%20John%20Cheever%2C%20Nathaniel%20Hawthorne%20%281804-1864%29%20Times">| Authors |</a>
+                </li>
+                <li>
+                    <a href="editprofile.html">| Edit Profile |</a>
+                </li>
+                <li>
+                    <input type="button" value="Log Out" id="log_btn" onclick="goToHomepage()">
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <!-- ----------------------------Searchbar------------------------------------ -->
+        <div class="row" id="searchbar">
+            <form class="form" role="search" id="search_book">
+                <input type="search" id="query" name="q" placeholder="Search by Book"
+                    aria-label="Search through site content">
+                <button>Search</button>
+            </form>
+            <br><br>
+            <form class="form" role="search" id="searc_auth">
+                <input type="search" id="query" name="q" placeholder="Search by Author"
+                    aria-label="Search through site content">
+                <button>Search</button>
+            </form>
+        </div>
+        <!-- --------------------Favourite Section------------------------------ -->
+        <br><br>
+        <div class="row">
+            <div class="col-4" id="favSec">
+                <h4 style="text-align:center ;">Favourites</h4><br>
+                <div class="card_fav" style="width: 80%; margin-left: 8%;">
+                    <center>
+                        <img src="assets/fav1.jpg" class="img_fav" width="100px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter & Philosopher's Stone</h5>
+                        <h6 class="white_text">J K Rowling</h6>
+                        <p class="card-text">Harry Potter and the Philosopher's Stone is a 1997 fantasy novel written by
+                            British author J. K. Rowling.It is the first novel in the Harry Potter series and Rowling's
+                            debut novel.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">First published in 1997 |
+                            <a
+                                href="https://openlibrary.org/works/OL18020194W/It_Ends_With_Us?edition=ia%3Aitendswithus0000hoov">Click
+                                Here </a>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="card_fav" style="width: 80%; margin-left: 8%;">
+                    <center>
+                        <img src="assets/fav2.jpg" class="img_fav" width="100px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">The Love Hypothesis</h5>
+                        <h6 class="white_text">Ali Hazelwood</h6>
+                        <p class="card-text">An LGBT romantic comedy with a twist from the C omedy women in print Prize
+                            winner Laura Steven, author of the exact opposite of okay.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">First published in 2021 |
+                            <a href="https://openlibrary.org/works/OL24178205W/The_Love_Hypothesis">Click Here </a>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="card_fav" style="width: 80%; margin-left: 8%;">
+                    <center>
+                        <img src="assets/fav3.jpg" class="img_fav" width="100px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">Pride & Prejudice</h5>
+                        <h6 class="white_text">Jane Austin</h6>
+                        <p class="card-text">It portrays life in the genteel rural society of the day, and tells of the
+                            initial misunderstandings and later mutual enlightenment between Elizabeth Bennet and the
+                            haughty Darcy.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">First published in 1813 |
+                            <a href="https://openlibrary.org/works/OL26663382W/I%27m_Glad_My_Mom_Died">Click Here </a>
+                        </small>
+                    </div>
+                </div>
+                <br>
+                <hr style="color:blue ;">
+                <a href="mybooks.html">Go to 'My Favourites' to see more books</a>
+            </div>
+
+            <!-- -----------------------Recommendation Section------------------------------ -->
+            <div class="col-4" id="recSec">
+                <h4 style="text-align:center ;">Recommendations</h4><br>
+                <div class="card_rec" style="width: 80%; margin-left: 10%;">
+                    <center>
+                        <img src="assets/b1.jpg" class="img_rec" width="100px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">It Ends With Us</h5>
+                        <h6 class="white_text">Colleen Hoover</h6>
+                        <p class="card-text">The newest, highly anticipated novel from beloved #1 New York Times
+                            bestselling author, Colleen Hoover. Sometimes it is the one who loves you who hurts you the
+                            most.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">First published in 2016 |
+                            <a
+                                href="https://openlibrary.org/works/OL18020194W/It_Ends_With_Us?edition=ia%3Aitendswithus0000hoov">Click
+                                Here </a>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="card_rec" style="width: 80%; margin-left: 10%;">
+                    <center>
+                        <img src="assets/b2.jpg" class="img_rec" width="100px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">The 48 Laws of Power</h5>
+                        <h6 class="white_text">Robert Greene</h6>
+                        <p class="card-text">Amoral, cunning, ruthless, and instructive, this piercing work distills
+                            three thousand years of the history of power in to forty-eight well explicated laws.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">First published in 1998 |
+                            <a href="https://openlibrary.org/works/OL27710807W/Me_quiero_te_quiero">Click Here </a>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="card_rec" style="width: 80%; margin-left: 10%;">
+                    <center>
+                        <img src="assets/b3.jpg" class="img_rec" width="100px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">I'm Glad My Mom Died</h5>
+                        <h6 class="white_text">Jennette McCurdy</h6>
+                        <p class="card-text">A heartbreaking and hilarious memoir by iCarly and Sam & Cat star Jennette
+                            McCurdy about her struggles as a former child actor—including eating disorders, addiction,
+                            and a complicated relationship with her overbearing mother—and how she retook control of her
+                            life.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">First published in 2022 |
+                            <a href="https://openlibrary.org/works/OL26663382W/I%27m_Glad_My_Mom_Died">Click Here </a>
+                        </small>
+                    </div>
+                </div>
+                <br>
+                <hr style="color:blue ;">
+                <a href="https://openlibrary.org/trending/monthly">See more Recommended Books on openlibrary.org
+                    here</a>
+            </div>
+
+            <!-- ------------------------------Author Section---------------------- -->
+            <div class="col-4" id="authSec">
+                <h4 style="text-align:center ;">Authors</h4><br>
+                <div class="card_auth" style="width: 80%; margin-left: 12%;">
+                    <center>
+                        <img src="assets/auth1.jpg" class="img_auth" width="150px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">Colleen Hoover</h5>
+                        <h6 class="white_text">Age - 42</h6>
+                        <p class="card-text">Colleen Hoover is an American author of young adult fiction and romance
+                            novels. Many of her works have been self-published before being picked up by a publishing
+                            house.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">To know more about Author |
+                            <a href="https://openlibrary.org/authors/OL7315784A/Colleen_Hoover">Click Here </a>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="card_auth" style="width: 80%; margin-left: 12%;">
+                    <center>
+                        <img src="assets/auth2.jpg" class="img_auth" width="150px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">Jennette McCurdy</h5>
+                        <h6 class="white_text">Age - 30</h6>
+                        <p class="card-text">Jennette Michelle Faye McCurdy is an American writer, director, podcaster,
+                            singer, and former actress.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">To know more about author |
+                            <a href="https://openlibrary.org/authors/OL10032819A/Jennette_McCurdy">Click Here </a>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="card_auth" style="width: 80%; margin-left: 12%;">
+                    <center>
+                        <img src="assets/auth3.jpg" class="img_auth" width="150px" height="150px">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">James Clear</h5>
+                        <h6 class="white_text">Age - 39</h6>
+                        <p class="card-text">
+                            James Clear is an American author, entrepreneur, and photographer whose work on habits and
+                            human potential focuses on how we can live better.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="white_text">To know more about Author |
+                            <a href="https://openlibrary.org/authors/OL7422948A/James_Clear">Click Here </a>
+                        </small>
+                    </div>
+                </div>
+                <br>
+                <hr style="color:blue ;">
+                <a
+                    href="https://openlibrary.org/subjects/authors_and_publishers#:~:text=James%20Joyce%20%281882-1941%29%2C%20Charles%20Dickens%20%281812-1870%29%2C%20Ernest%20Hemingway,James%20%281843-1916%29%2C%20John%20Cheever%2C%20Nathaniel%20Hawthorne%20%281804-1864%29%20Times">See
+                    more Authors & Publishers on openlibrary.org here</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h6>For more details contact us at - </h6>
+        </div>
+        <div class="row" id="footerContact">
+            <div class="col-4">9876543210</div>
+            <div class="col-4">abc@bookkeeper.com</div>
+            <div class="col-4">abc@facebook</div>
+        </div>
+        <div class="row">
+            <p>This application's rights are reserved by &copy;Bookkeper | Data gathered from
+                <a href="https://openlibrary.org/">openlibrary.org</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>

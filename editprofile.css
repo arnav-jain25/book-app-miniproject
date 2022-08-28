@@ -1,0 +1,142 @@
+/* Header */
+header {
+    text-align: center;
+    background-color: #f2f2f2
+}
+
+header h1 {
+    color: rgb(208, 56, 29);
+}
+
+.divider {
+    /* minor cosmetics */
+    display: table;
+    font-size: 24px;
+    text-align: center;
+    width: 75%;
+    /* divider width */
+    margin: 40px auto;
+    /* spacing above/below */
+}
+
+.divider span {
+    display: table-cell;
+    position: relative;
+}
+
+.divider span:first-child,
+.divider span:last-child {
+    width: 50%;
+    top: 20px;
+    /* adjust vertical align */
+    -moz-background-size: 100% 2px;
+    /* line width */
+    background-size: 100% 2px;
+    /* line width */
+    /* background-position: 0 0, 0 100%; */
+    background-repeat: no-repeat;
+}
+
+.divider span:first-child {
+    /* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgb(46, 77, 74)));
+    background-image: -webkit-linear-gradient(180deg, transparent, rgb(29, 111, 121));
+    background-image: -moz-linear-gradient(180deg, transparent, rgb(150, 222, 18));
+    background-image: -o-linear-gradient(180deg, transparent, rgb(165, 202, 32));
+    background-image: linear-gradient(90deg, transparent, rgb(211, 135, 20));
+}
+
+.divider span:nth-child(2) {
+    color: rgb(216, 143, 42);
+    padding: 0px 5px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.divider span:last-child {
+    /* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(46, 77, 74)), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, rgb(29, 111, 121), transparent);
+    background-image: -moz-linear-gradient(180deg, rgb(150, 222, 18), transparent);
+    background-image: -o-linear-gradient(180deg, rgb(165, 202, 32), transparent);
+    background-image: linear-gradient(90deg, rgb(211, 135, 20), transparent);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    color: rgb(208, 56, 29);
+}
+
+#footerContact {
+    padding-bottom: 7px;
+    border-bottom: 1px solid black;
+    color: rgb(216, 143, 42);
+}
+
+/* ---------------------------------------------------------------------- */
+
+div{
+    text-align: center;
+}
+
+h3{
+    color: rgb(162, 199, 0);
+}
+
+form{
+    color: rgb(199, 0, 90);
+}
+#regForm{
+    background: #f2f2f2;
+    width: 50%;
+    padding: 75px;
+}
+
+#bodyCont{
+    background-color: #f2f2f2;
+}
+/* ---------------------------------------------- */
+/* Navbar */
+nav {
+    background-color: rgb(160, 109, 95);
+    /* top: 5px;
+    height: 30px; */
+    /* box-shadow: 0 0 25px 0 black; */
+}
+
+nav * {
+    display: inline;
+}
+
+nav li {
+    margin: 35px;
+}
+
+nav li a {
+    color: wheat;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: wheat;
+    color: rgb(160, 109, 95);
+    text-decoration: none;
+}
+
+#log_btn{
+    text-align: center;
+    width: 10%;
+    padding: 6px;
+    background-color: rgb(160, 109, 95);
+    color: wheat;
+    border: 0px;
+}
+#log_btn:hover{
+    text-align: center;
+    width: 10%;
+    background-color: wheat;
+    color: rgb(160, 109, 95);
+    text-decoration: none;
+}

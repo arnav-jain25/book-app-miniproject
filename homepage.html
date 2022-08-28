@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookkeeper | Homepage</title>
+
+    <link rel="stylesheet" href="homepage.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="homepage.js"></script>
+
+</head>
+
+<header>
+    <h1>Welcome to Bookkeeperrr..!!</h1>
+    <div class="divider"><span></span><span>A Book Management Application</span><span></span></div>
+</header>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="left-side">
+                <br>
+                <img src="assets/homepage.jpg" width="300" height="300"><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo praesentium, mollitia perferendis,
+                    sapiente blanditiis fugiat consequuntur velit deserunt aliquid suscipit reprehenderit maxime laborum
+                    ad dolorum earum id qui eamolestiae temporibus similique. Quibusdam eos vel quam pariatur veritatis
+                    ullam ducimus adipisci accusamus voluptatem veniam, commodi odio iusto unde, dolor labore voluptatum
+                    magni iste laborum deleniti ipsa! Dignissimos dolores nesciunt enim ipsam animi, nisi assumenda
+                    fugiat
+                    quas dolore at est. Dolor repudiandae aliquid totam obcaecati.</p>
+            </div>
+            <div class="right-side">
+                <br>
+                <h3>Login Now </h3><br><br>
+                <form action="" id="form">
+                    <label for="logEmail">Email ID - </label>
+                    <input type="text" name="logEmail" id="logEmail" class="form-control"><br><br>
+                    <label for="logPwd">Password - </label>
+                    <input type="password" name="logPwd" id="logPwd" class="form-control">
+                    <br><br>
+                    <input type="button" class="btn btn-info" value="Login Now!" id="login_btn" onclick="goToDashboard()"><br><br>
+                    <nav>
+                        <a href="registration.html">New User? Click here to register</a>
+                    </nav>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h6>For more details contact us at - </h6>
+        </div>
+        <div class="row" id="footerContact">
+            <div class="col-4">9876543210</div>
+            <div class="col-4">abc@bookkeeper.com</div>
+            <div class="col-4">abc@facebook</div>
+        </div>
+        <div class="row">
+            <p>This application's rights are reserved by &copy;Bookkeper | Data gathered from 
+                <a href="https://openlibrary.org/">openlibrary.org</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>

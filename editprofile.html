@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookkeeper | Edit Profile</title>
+
+    <link rel="stylesheet" href="editprofile.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+</head>
+
+<header>
+    <h1>Welcome to Bookkeeperrr..!!</h1>
+    <div class="divider"><span></span><span>A Book Management Application</span><span></span></div>
+</header>
+
+<body>
+    <div class="container" id="bodyCont">
+        <br>
+        <nav>
+            <ul>
+                <li>
+                    <a href="dashboard.html">| Home |</a>
+                </li>
+                <li>
+                    <a href="mybooks.html">| My Favourites |</a>
+                </li>
+                <li>
+                    <a href="https://openlibrary.org/trending/monthly">| Recommendations |</a>
+                </li>
+                <li>
+                    <a href="https://openlibrary.org/subjects/authors_and_publishers#:~:text=James%20Joyce%20%281882-1941%29%2C%20Charles%20Dickens%20%281812-1870%29%2C%20Ernest%20Hemingway,James%20%281843-1916%29%2C%20John%20Cheever%2C%20Nathaniel%20Hawthorne%20%281804-1864%29%20Times">| Authors |</a>
+                </li>
+                <li>
+                    <a href="editprofile.html">| Edit Profile |</a>
+                </li>
+                <li>
+                    <input type="button" value="Log Out" id="log_btn" onclick="goToHomepage()">
+                </li>
+            </ul>
+        </nav>
+        <br><br>
+        <div class="row">
+            <h3>Edit your Profile here</h3>
+        </div>
+        <div class="container" id="regForm">
+            <form action="">
+                <label for="regName">Name - </label>
+                <input type="text" name="regName" id="regName" class="form-control">
+                <label for="regEmail">Email ID - </label>
+                <input type="email" name="regEmail" id="regEmail" class="form-control">
+                <label for="regPwd">Password - </label>
+                <input type="password" name="regPwd" id="regPwd" class="form-control">
+                <label for="regDOB">Date of Birth - </label>
+                <input type="date" name="regDOB" id="regDOB" class="form-control">
+                <label for="regPhone">Phone No. - </label>
+                <input type="text" name="regPhone" id="regPhone" class="form-control">
+                <label for="regAdd">Address - </label><br>
+                <textarea name="regAdd" id="regAdd" cols="52" rows="4"></textarea><br><br>
+
+                <input type="button" value="Update Profile" class="btn btn-info" onclick="location.href='dashboard.html'"><br><br>
+                <!-- <script src="registration.js"></script> -->
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h6>For more details contact us at - </h6>
+        </div>
+        <div class="row" id="footerContact">
+            <div class="col-4">9876543210</div>
+            <div class="col-4">abc@bookkeeper.com</div>
+            <div class="col-4">abc@facebook</div>
+        </div>
+        <div class="row">
+            <p>This application's rights are reserved by &copy;Bookkeper | Data gathered from
+                <a href="https://openlibrary.org/">openlibrary.org</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>

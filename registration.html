@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookkeeper | Registration</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="registration.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="registration.js"></script>
+
+</head>
+
+<header>
+    <h1>Welcome to Bookkeeperrr..!!</h1>
+    <div class="divider"><span></span><span>A Book Management Application</span><span></span></div>
+</header>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="row">
+            <h3>Register Now</h3>
+        </div>
+        <div class="container" id="regForm">
+            <form action="">
+                <label for="regName">Name - </label>
+                <input type="text" name="regName" id="regName" class="form-control">
+                <label for="regEmail">Email ID - </label>
+                <input type="email" name="regEmail" id="regEmail" class="form-control">
+                <label for="regPwd">Password - </label>
+                <input type="password" name="regPwd" id="regPwd" class="form-control">
+                <label for="regDOB">Date of Birth - </label>
+                <input type="date" name="regDOB" id="regDOB" class="form-control">
+                <label for="regPhone">Phone No. - </label>
+                <input type="text" name="regPhone" id="regPhone" class="form-control">
+                <label for="regAdd">Address - </label><br>
+                <textarea name="regAdd" id="regAdd" cols="52" rows="4"></textarea><br><br>
+
+                <input type="button" value="Register" class="btn btn-info" onclick="goToHomepage()"><br><br>
+                <!-- <script src="registration.js"></script> -->
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h6>For more details contact us at - </h6>
+        </div>
+        <div class="row" id="footerContact">
+            <div class="col-4">9876543210</div>
+            <div class="col-4">abc@bookkeeper.com</div>
+            <div class="col-4">abc@facebook</div>
+        </div>
+        <div class="row">
+            <p>This application's rights are reserved by &copy;Bookkeper | Data gathered from 
+                <a href="https://openlibrary.org/">openlibrary.org</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>
